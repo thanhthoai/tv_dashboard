@@ -1,0 +1,54 @@
+.header {
+    box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
+    height: 114px;
+    width: 100%;
+    &-main {
+      display: flex;
+      justify-content: space-between;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+    &-logo {
+      padding-top: 35px;
+    }
+
+    &-img {
+      width: 33px;
+      height: 27px;
+      position: relative;
+      right: 0;
+      transition: right linear 0.1s;
+    }
+    &-img:hover {
+      right: -4px;
+      font-weight: bold;
+    }
+    @media screen and (max-width: 1023px) {
+      width: 100%;
+      padding: 20px 0;
+          &-main {
+              margin-left: 100px;
+          }
+        &-logo {
+          padding-top: 10px;
+          margin-left: -70px;
+        }
+        &-img {
+          display: none;
+        }
+    }
+    @media screen and (max-width: 1366px) and (min-width: 1024px) {
+      width: 100%;
+        &-logo {
+          padding-top: 28px;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        &-logo {
+          padding-top: 10px;
+          margin-left: -80px;
+        }
+    }
+  }
+ 
+  

@@ -1,0 +1,101 @@
+.hero {
+    // width: 1301px;
+    &-main {
+      // padding: 104px 0 97px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      // position: static;
+      // margin-left: 100px;
+      // width: 1500px;
+    }
+    &-home {
+      display: block;
+      height: 178px;
+      // text-align: center;
+      width: 100%;
+      margin-top: 280px;
+      background-color: #fff7df;
+      border: 1px solid #efefef;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    &-header {
+      text-align: center;
+    }
+    &-heading {
+      color: $text-color;
+      font-family: $fonts;
+      font-weight: 1000;
+      font-size: 18px;
+      line-height: 31.64px;
+      margin-top: 60px;
+      // font-style: bold;
+      margin-bottom: 60px;
+    }
+    &-underline {
+      // position: absolute;
+      width: 30px;
+      height: 4px;
+      background: $bgc-gradient;
+      text-align: center;
+      margin: 16px 0px 0px 68px;
+      border-radius: 20px;
+    }
+    &-boder {
+      display: flex;
+      justify-content: center;
+      // align-items: center;
+      left: 0;
+      right: 0;
+      h2 {
+        padding: 0 20px;
+        color: $text-color;
+        font-family: $fonts;
+        font-weight: 1000;
+        font-size: 18px;
+        line-height: 31.78%;
+        text-align: justify;
+      }
+    }
+    @media screen and (max-width: 1023px) {
+      &-main {
+        margin: 0;
+      }
+    }
+    @media screen and (max-width: 1366px) and (min-width: 1024px) {
+    }
+  
+    @media screen and (max-width: 767px) {
+      // &-heading {
+      //   margin-top: 30px;
+      //   margin-bottom: 20px;
+      // }
+      &-boder {
+        // flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        right: 0;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        // gap: 50px;
+        h2 {
+          margin-bottom: 26px;
+          // font-size: 15px;
+        }
+      }
+      &-ha {
+        display: flex;
+        flex-direction: column;
+      }
+      &-underline {
+        margin: -14px 0 11px 60px;
+      }
+      &-home {
+        height: 100%;
+      }
+    }
+  }
+  

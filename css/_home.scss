@@ -1,0 +1,38 @@
+.home {
+    &-cb {
+        position: absolute;
+        display: flex;
+        // justify-content: space-between;
+        align-items: center;
+        margin-top: 200px;
+        gap: 15px;
+        // margin-left: 15px;
+        img {
+          width: 25px;
+          // margin-left: 100px;
+        }
+      }
+      &-txt {
+        margin-left: 10px;
+        font-family: $fonts;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18.27px;
+        color: $text-color;
+      } 
+      @media screen and (max-width: 1366px) and (min-width: 1024px) {
+        &-cb {
+            margin-left: 15px;
+        }
+    }
+    @media screen and (max-width: 1023px) {
+        &-cb {
+            margin-left: 40px;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        &-cb {
+            margin-left: 20px;
+        }
+    }
+}

@@ -1,0 +1,225 @@
+.footer {
+    padding-top: 50px;
+    background-color: #212121;
+    // font-family: Proxima Nova;
+    // font-size: 15px;
+    line-height: 175.78%;
+    color: $heading-color;
+    // width: 1500px;
+    &-top {
+      display: flex;
+      padding-bottom: 30px;
+      gap: 300px;
+    }
+    &-address {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 150px 80px;
+    }
+    &-end {
+      height: 39px;
+      background-color: black; 
+      // margin-left: 10px ;
+      // align-items: center;
+    }
+    &-logo {
+      width: 142px;
+      margin-bottom: 30px;
+    }
+    &-title {
+      
+      font-family: $fonts;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 26.37px;
+      
+    }
+    &-desc {
+      font-family: $fonts;
+      color: rgb(212, 211, 211);
+      width: 265px;
+      margin-bottom: 40px;
+      font-size: 14px;
+      line-height: 17px;
+      // margin-right: 192px;
+    }
+    &-social {
+      margin-top: 30px;
+      display: flex;
+      gap: 10px;
+    }
+    &-icon {
+      width: 21px;
+      height: 21px;
+      display: inline;
+    }
+    &-item-right {
+      margin-top: 30px;
+      width: 155px;
+    }
+    &-item-beet {
+      margin-top: 30px;
+      width: 200px;
+    }
+    &-item-end {
+      margin-top: 116px;
+      width: 147px;
+    }
+    &-link {
+      font-family: $fonts;
+      color: $heading-color;
+      display: block;
+      font-size: 15px;
+      // font-style: normal;
+      font-weight: 100;
+      color: rgb(212, 211, 211);
+    }
+    &-show {
+      font-size: 12px;
+      display: flex;
+      justify-items: center;
+      // gap:20px;
+      justify-content: space-between;
+    }
+    &-all {
+      // margin-left: 108px;
+      color: $heading-color;
+      font-family: $fonts;
+      font-size: 12px;
+      line-height: 15px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    &-po {
+      // margin-left: 920px;
+      font-family: $fonts;
+      font-size: 12px;
+      line-height: 15px;
+      font-weight: 700;
+      color: $heading-color;
+      display: flex;
+      margin-top: 10px;
+      a {
+        margin-left: 30px;
+        color: white;
+        text-align: center;
+        span {
+          color: white;
+          background: linear-gradient(
+          253.58deg, #FFC000 1.55%, #FF8A00 95.8%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+    &-cre {
+      margin-left: 30px;
+      color: rgb(173, 93, 18);
+    }
+  
+
+    @media screen and (max-width: 1023px) and (min-width: 768px) {
+      width: inherit;
+      &-top {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0;
+      }
+      &-introduce {
+        text-align: center;
+      }
+      &-logo {
+        margin-left: 70px;
+      }
+      &-show {
+        padding: 10px;
+      }
+      &-end {
+        height: 50px;
+      }
+      &-po {
+        margin-top: 0px;
+      }
+      &-all {
+        margin-top: 0px;
+      }
+      &-social {
+        justify-content: center;
+      }
+    }
+    @media screen and (max-width: 1366px) and (min-width: 1024px) {
+      width: 100%;
+      font-size: 12px;
+      line-height: 160.78%;
+      &-top {
+        padding: 10px 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px 40px;
+        padding-bottom: 30px;
+      }
+      &-address {
+        grid-gap: inherit;
+      }
+      &-desc {
+        margin-right: 100px;
+      }
+      &-show {
+        padding: 10px;
+        }
+        &-item-end {
+          margin-top: 90px;
+        }
+        &-po {
+          margin-top: 0px;
+        }
+        &-all {
+          margin-top: 0px;
+        }
+    }
+    @media screen and (max-width: 767px) {
+      margin-top: -150px;
+      width: 100%;
+      height: 100%;
+      &-top {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        gap:0;
+      }
+      &-introduce {
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+  
+      &-logo {
+        width: inherit;
+        padding-left: 70px;
+      }
+      &-show {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        &-po {
+          margin-left: -148px;
+        }
+      }
+      &-social {
+        justify-content: center;
+      }
+      &-address {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+        gap: 40px;
+      }
+      &-end {
+        height: 70px;
+      }
+    }
+  }
+  

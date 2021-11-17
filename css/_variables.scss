@@ -1,0 +1,16 @@
+$primary-font: "Roboto", 
+sans-serif;
+$text-color: #5C5C5C;
+$heading-color: #FFFFFF;
+$primary-color: #FFC000;
+$second-color: #FFF7DF;
+$color1: #ffc000;
+$color2: #ff8a00;
+$bgc-gradient: linear-gradient(253.58deg, #ffc000 1.55%, #ff8a00 95.8%);
+$fonts: "Proxima Nova", sans-serif;
+$font: "Proxima Nova";
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("/font/Proxima-Nova-1.ttf") format("truetype");
+  }
